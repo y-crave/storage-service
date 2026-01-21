@@ -1,6 +1,6 @@
 -- ~/go/bin/migrate create -ext sql -dir migrations -seq -digits 4 create_storage_table
 
-CREATE TABLE storage
+CREATE TABLE storages
 (
     id            UUID PRIMARY KEY         DEFAULT gen_random_uuid(),
     bucket_name   VARCHAR(255) NOT NULL,
